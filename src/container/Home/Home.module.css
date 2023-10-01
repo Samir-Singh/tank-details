@@ -1,0 +1,15 @@
+.second_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding: 3%;
+}
+
+.dashboard_para {
+  text-align: start;
+  padding: 0% 8%;
+  margin-top: 2%;
+  font-weight: 600;
+  color: #001731;
+}

@@ -1,0 +1,69 @@
+.main_div {
+  padding: 2% 5%;
+}
+
+.bread_crum {
+  text-align: start;
+  font-weight: 600;
+}
+
+.link_bread {
+  cursor: pointer;
+  color: blue;
+}
+
+.main_details_div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2% 0%;
+}
+
+.tank_img_div {
+  width: 40%;
+}
+
+.tank_img {
+  width: 100%;
+  height: 100%;
+}
+
+.tank_details_div {
+  width: 50%;
+  text-align: start;
+  padding: 0% 2%;
+}
+
+.tank_code_para {
+  font-size: 2rem;
+}
+
+.tank_reg_no {
+  padding: 2% 0%;
+  font-size: 1.3rem;
+}
+
+.value {
+  color: blue;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col {
+  text-align: start;
+  width: 33%;
+  padding: 2%;
+  font-weight: 600;
+}
+
+.no_pad_left {
+  padding-left: 0%;
+}
+
+p {
+  margin: 0px;
+}

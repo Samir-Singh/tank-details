@@ -1,19 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
 import _ from "lodash";
 import downarrow from "../../assets/ArrowPagintion.png";
 import style from "./Pagination.module.css";
 
 const Pagination = (props) => {
-  const location = useLocation();
-  let [pages, setPages] = useState([]);
-  let [click, setClick] = useState(0);
+  let [, setPages] = useState([]);
+  const click = 0;
   const { pagesCount, onPageChange, currentPage } = props;
 
   useEffect(() => {
     let pages = _.range(1, pagesCount + 1);
     setPages(pages);
-  }, []);
+  }, [pagesCount]);
 
   useEffect(() => {
     let pages = _.range(click * 2 + 1, pagesCount + 1);
@@ -39,7 +37,7 @@ const Pagination = (props) => {
             padding: "5px",
           }}
           className={style.preBtn}
-          disabled={currentPage == 1 ? true : false}
+          disabled={currentPage === 1 ? true : false}
           onClick={() => onPageChange(currentPage, "prev")}
         >
           {/* Prev */}
@@ -63,7 +61,7 @@ const Pagination = (props) => {
             padding: "5px",
           }}
           className={style.preBtn}
-          disabled={Math.ceil(pagesCount) == currentPage ? true : false}
+          disabled={Math.ceil(pagesCount) === currentPage ? true : false}
           onClick={() => onPageChange(currentPage, "next")}
         >
           <img src={downarrow} alt="img" />

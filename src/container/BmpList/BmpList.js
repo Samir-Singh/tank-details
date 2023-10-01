@@ -21,7 +21,7 @@ const BmpList = () => {
         <span className={style.link_bread} onClick={() => navigate("/")}>
           Dashboard
         </span>{" "}
-        > BMP List
+        {">"} BMP List
       </div>
       <div className={style.header}>
         List Of BMP <p className={style.tank_count}>100</p>
@@ -42,7 +42,12 @@ const BmpList = () => {
               {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]?.map((item, idx) => (
                 <tr key={idx}>
                   <td>
-                    <span className={style.link}>IITM-00002</span>
+                    <span
+                      className={style.link}
+                      onClick={() => navigate("/bmpDetails")}
+                    >
+                      IITM-00002
+                    </span>
                   </td>
                   <td>up78</td>
                   <td>INDIA</td>
